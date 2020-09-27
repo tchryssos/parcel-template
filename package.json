@@ -10,6 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "alias": {
+    "logic": "./src/logic",
+    "static": "./src/static"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/plugin-transform-runtime": "^7.11.0",
