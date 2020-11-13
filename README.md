@@ -1,5 +1,7 @@
 # Troy's Parcel Template
 
+[Parcel](https://parceljs.org/getting_started.html)
+
 ## Setup
 
 1. clone the repo
@@ -17,6 +19,8 @@ There are 2 ways to run the app locally:
 - `npm run prod`
 
 `dev` uses `Parcel`'s development config (with their internal dev server and hot reloading) while `prod` builds a production build of the app and serves that. `dev` is what should be used for regular development, `prod` should be used to check for things like lighthouse score and anything else that would change depending on production optimizations.
+
+`dev` hosts to `localhost:1234` while `prod` hosts to `localhost:1235` so that both can be run simultaneously.
 
 ## Development
 
