@@ -1,3 +1,3 @@
-const content = document.getElementById('content')
+import { elements } from 'logic/elements'
 
 content.textContent = 'TEMPLATE WORKS!'

@@ -16,7 +16,7 @@ There are 2 ways to run the app locally:
 - `npm run dev`
 - `npm run prod`
 
-`dev` uses parcel's development config (with their internal dev server and hot reloading) while `prod` builds a production build of the app and serves that. `dev` is what should be used for regular development, `prod` should be used to check for things like lighthouse score and anything else that would change depending on production optimizations.
+`dev` uses `Parcel`'s development config (with their internal dev server and hot reloading) while `prod` builds a production build of the app and serves that. `dev` is what should be used for regular development, `prod` should be used to check for things like lighthouse score and anything else that would change depending on production optimizations.
 
 ## Development
 
