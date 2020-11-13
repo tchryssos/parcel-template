@@ -44,7 +44,7 @@ There are two `deploy` commands in this repo. `deploy:only_first` should only be
 
 The `deploy` command combines information from [this gist](https://gist.github.com/cobyism/4730490) and [this blog post](https://clontz.org/blog/2014/05/08/git-subtree-push-for-deployment/). Essentially, we're taking our `main` branch (check this! your default branch might be `master`, in which case you'll need to update the command or your branch name!), copying ONLY the `dist` folder where our build lives (and is created automatically by the command) and pushing that to our `gh-pages` branch, which github knows to automatiaclly deploy to a github pages page.
 
-The reason we need a `deploy:only_first` command is that the `deploy` command will fail if the `gh-pages` branch doesn't exist. `deploy:only_first` creates and pushes this branch, then immediately runs the regular deploy command to overwrite it with the `dist` folder.
+The reason we need a `deploy:only_first` command is that the `deploy` command will fail if the `gh-pages` branch doesn't exist. `deploy:only_first` creates and pushes this branch, then immediately runs the regular deploy command to overwrite it with the `dist` folder. `deploy:only_first` will also delete your `node_modules` folder and then re-install it, since occassionally `Parcel` will fail to build initially if your `node_modules` folder is out of date. Note that if `deploy:only_first` gets as far as creating and pushing the `gh-pages` branch (which it almost certainly will) and then errors or crashes, you still need to switch to the `deploy` command after you've fixed your errors.
 
 To summarize:
 
