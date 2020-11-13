@@ -6,7 +6,7 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html --public-url ./",
     "prod": "npm run build && npx http-server dist -p 3003 --proxy http://localhost:3003?",
-    "deploy": "rm -rf dist && npm run build && git push origin `git subtree split --prefix dist master`:gh-pages --force"
+    "deploy": "rm -rf dist && npm run build && git push origin `git subtree split --prefix dist main`:gh-pages --force"
   },
   "keywords": [],
   "author": "",

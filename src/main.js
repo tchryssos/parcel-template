@@ -1,3 +1,3 @@
-import { elements } from 'logic/elements'
+import { content } from 'logic/elements'
 
 content.textContent = 'TEMPLATE WORKS!'
