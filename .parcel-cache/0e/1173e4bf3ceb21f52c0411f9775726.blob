@@ -1,0 +1,6 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "content", function () {
+  return content;
+});
+const content = document.getElementById('content');
