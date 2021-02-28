@@ -1,2 +1,0 @@
-var _logicElements = require('logic/elements');
-_logicElements.content.textContent = 'TEMPLATE WORKS!';
