@@ -31,6 +31,6 @@
     "eslint": "^7.21.0",
     "eslint-plugin-import": "^2.22.1",
     "parcel": "^2.0.0-nightly.610",
-    "postcss": "^8.2.6"
+    "postcss": "^8.2.10"
   }
 }
