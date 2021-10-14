@@ -1,33 +1,41 @@
 {
-	"parser": "babel-eslint",
+	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
-			"ecmaVersion": 6,
-			"sourceType": "module",
-			"ecmaFeatures": {
-					"jsx": true
-			}
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
 	},
 	"env": {
 		"browser": true,
 		"node": true,
 		"es6": true
 	},
-	"extends": [
-		"eslint:recommended"
-	],
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"plugins": ["@typescript-eslint", "simple-import-sort", "import"],
 	"rules": {
-			"no-console": ["error", { "allow": ["warn", "error"] }],
-			"no-multiple-empty-lines": ["error", {"max": 2}],
-			"no-prototype-builtins": 0,
-			"class-methods-use-this": 0,
-			"padded-blocks": 0,
-			"no-tabs": 0,
-			"no-mixed-spaces-and-tabs": "error",
-			"indent": ["error", "tab", { "SwitchCase": 1 }],
-			"semi": [2, "never"],
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"no-multiple-empty-lines": ["error", { "max": 2 }],
+		"no-prototype-builtins": "off",
+		"class-methods-use-this": "off",
+		"padded-blocks": "off",
+		"no-tabs": "off",
+		"no-mixed-spaces-and-tabs": "error",
+		"semi": "off",
+		"indent": "off",
+		"comma-dangle": "off",
 
-			"import/no-named-as-default": 0,
-			"import/extensions": 0,
-			"import/prefer-default-export": 0
+		// import
+		"import/no-named-as-default": "off",
+		"import/extensions": "off",
+		"import/prefer-default-export": "off",
+		"import/no-unresolved": "off",
+		"import/no-anonymous-default-export": "error",
+		"simple-import-sort/imports": "warn",
+		"simple-import-sort/exports": "warn",
+
+		// Typescript
+		"@typescript-eslint/explicit-module-boundary-types": "off"
 	}
 }
