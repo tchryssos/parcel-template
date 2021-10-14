@@ -4,6 +4,7 @@
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
-    "GitHub.vscode-pull-request-github"
+    "GitHub.vscode-pull-request-github",
+    "arcanis.vscode-zipfs"
   ]
 }
